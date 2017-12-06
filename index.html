@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simon Game</title>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myjs.js"></script>
+</head>
+  
+<body>
+        <h1>Simon Game</h1>
+      
+      <div class="wrapper">
+         <div class="back">
+             <div class="pad green" id="green" onclick="simon.userinput(this.id)">
+             </div>
+             <div class="pad red" id="red" onclick="simon.userinput(this.id)">
+             </div>
+             <div class="pad blue" id="blue" onclick="simon.userinput(this.id)">
+             </div>
+             <div class="pad yellow" id="yellow" onclick="simon.userinput(this.id)">
+             </div>
+          <div class="circle">
+          
+           
+            
+          <div class="button">
+      <input type="button" id="strictBtn" value="" onclick="simon.generateseq()">
+      </div>
+           
+      <div class="button">
+      <input type="button" id="startBtn" value="" >
+       
+      </div>
+            
+            <h4 id="star">start</h4>
+           <h4 id="stri">strict</h3>
+       <div id="count">
+      <span id="cnt">--</span>
+      </div>
+       <h4 id="cou">count</h4>
+            
+      <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+          <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+          </label>
+      </div>
+            <div class="button">
+      <input type="button" id="strictLight" value="" >
+             
+       </div>
+      </div>
+   
+      
+        
+      </body>
+        
+      
+      
+</html>
